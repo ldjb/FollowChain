@@ -30,7 +30,7 @@ if (xmlhttp.readyState==4 && xmlhttp.status==200) {
 	}
 	
 	var obj = jQuery.parseJSON(response);
-	document.getElementById("userbox-wrapper").innerHTML = document.getElementById("userbox-wrapper").innerHTML + '<div class="userbox" style="background-image: url(\'' + obj.profile_image_url + '\');" title="'+ obj.screen_name +'"></div>';
+	document.getElementById("userbox-wrapper").innerHTML = document.getElementById("userbox-wrapper").innerHTML + '<a href="http://twitter.com/' + obj.screen_name + '" target="_blank"><div class="userbox" style="background-image: url(\'' + obj.profile_image_url + '\');" title="'+ obj.screen_name +'"></div></a>';
 	document.getElementById("tweet-text").innerHTML = "<strong>" + obj.screen_name + ":</strong> " + obj.tweet;
 	document.getElementById("userbox-wrapper").scrollTop = document.getElementById("userbox-wrapper").scrollHeight;
 	
