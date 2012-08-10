@@ -4,6 +4,8 @@ var xmlhttp = new XMLHttpRequest();
 
 function generateBoxes() {
 	document.getElementById("userbox-wrapper").innerHTML = "";
+	document.getElementById("tweet-text").innerHTML = "";
+	step_one = true;
 	current_screen_name = document.getElementById("screen_name_input").value;
 	newUserbox();
 	setInterval(function() {newUserbox();} , 5000);
