@@ -9,7 +9,7 @@ h1 {
 
 .userbox-wrapper {
 	height:				60%;
-	max-width:			1000px;
+	max-width:			936px;
 	margin:				auto auto;
 	overflow:			hidden;
 }
@@ -24,7 +24,7 @@ h1 {
 }
 
 .tweet-text {
-	max-width:			1000px;
+	max-width:			936px;
 	margin:				auto auto;
 	opacity:			1;
 	text-align:			center;
